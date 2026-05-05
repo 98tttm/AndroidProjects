@@ -10,6 +10,39 @@
     <string name="str_login">Login</string>
     <string name="str_exit">Exit</string>
     <string name="str_login_failed">Login failed</string>
-    <string name="str_login_successful">Login successful</string>"
+    <string name="str_login_successful">Login successful</string>
+    <string name="str_login_mc">MC</string>
+    <string name="str_login_mr">MR</string>
+    <string name="str_login_mplus">M+</string>
+    <string name="str_login_mnegative">M-</string>
+    <string name="str_login_ms">MS</string>
+    <string name="str_login_m">M</string>
+
+    <!-- Calculator Strings -->
+    <string name="calc_percent">%</string>
+    <string name="calc_ce">CE</string>
+    <string name="calc_c">C</string>
+    <string name="calc_del">⌫</string>
+    <string name="calc_inv">1/x</string>
+    <string name="calc_sqr">x²</string>
+    <string name="calc_sqrt">√x</string>
+    <string name="calc_div">÷</string>
+    <string name="calc_mul">×</string>
+    <string name="calc_sub">-</string>
+    <string name="calc_add">+</string>
+    <string name="calc_pm">+/-</string>
+    <string name="calc_dot">.</string>
+    <string name="calc_eq">=</string>
+    <string name="calc_0">0</string>
+    <string name="calc_1">1</string>
+    <string name="calc_2">2</string>
+    <string name="calc_3">3</string>
+    <string name="calc_4">4</string>
+    <string name="calc_5">5</string>
+    <string name="calc_6">6</string>
+    <string name="calc_7">7</string>
+    <string name="calc_8">8</string>
+    <string name="calc_9">9</string>
+    <string name="open_calculator_app">Open Calculator App</string>
 
 </resources>

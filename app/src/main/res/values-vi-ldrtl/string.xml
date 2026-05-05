@@ -11,5 +11,10 @@
     <string name="str_login">Đăng nhập</string>
     <string name="str_exit">Thoát</string>
     <string name="str_login_failed">Đăng nhập thất bại</string>
-    <string name="str_login_successful">Đăng nhập thành công</string>
+    <string name="str_login_mc">MC</string>
+    <string name="str_login_mr">MR</string>
+    <string name="str_login_mplus">M+</string>
+    <string name="str_login_mnegative">M-</string>
+    <string name="str_login_ms">MS</string>
+    <string name="str_login_m">M</string>
 </resources>

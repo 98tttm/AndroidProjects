@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717">
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="@string/calc_0"
+        android:textColor="@android:color/white"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/memoryBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplay">
+
+        <TextView
+            android:id="@+id/tvMC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/str_login_mc"
+            android:textColor="#80FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvMR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/str_login_mr"
+            android:textColor="#80FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvMPlus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/str_login_mplus"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvMNegative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/str_login_mnegative"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/str_login_ms"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/str_login_m"
+            android:textColor="#80FFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memoryBar">
+
+        <!-- Hàng 1: %, CE, C, Delete -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button android:id="@+id/btnPercent" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_percent" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnCE" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_ce" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnC" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_c" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnDel" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_del" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+        </TableRow>
+
+        <!-- Hàng 2: 1/x, x², √x, ÷ -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button android:id="@+id/btnInv" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_inv" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnSqr" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_sqr" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnSqrt" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_sqrt" android:textColor="@android:color/white" android:textSize="20sp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnDiv" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_div" android:textColor="@android:color/white" android:textSize="24sp" android:layout_height="match_parent" />
+        </TableRow>
+
+        <!-- Hàng 3: 7, 8, 9, x -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button android:id="@+id/btn7" style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#323232" android:text="@string/calc_7" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn8" style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#323232" android:text="@string/calc_8" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn9" style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#323232" android:text="@string/calc_9" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btnMul" style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="@string/calc_mul" android:textColor="@android:color/white" android:textSize="24sp" android:layout_height="match_parent" />
+        </TableRow>
+
+        <!-- Hàng 4: 4, 5, 6, - -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button android:id="@+id/btn4" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_4" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn5" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_5" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn6" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_6" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btnSub" style="@style/Widget.MaterialComponents.Button.TextButton" android:text="@string/calc_sub" android:textColor="@android:color/white" android:textSize="24sp" android:layout_height="match_parent" />
+        </TableRow>
+
+        <!-- Hàng 5: 1, 2, 3, + -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button android:id="@+id/btn1" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_1" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn2" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_2" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn3" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_3" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btnAdd" style="@style/Widget.MaterialComponents.Button.TextButton" android:text="@string/calc_add" android:textColor="@android:color/white" android:textSize="24sp" android:layout_height="match_parent" />
+        </TableRow>
+
+        <!-- Hàng 6: +/-, 0, ., = -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button android:id="@+id/btnPM" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_pm" android:textSize="20sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btn0" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_0" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btnDot" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#323232" android:text="@string/calc_dot" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+            <Button android:id="@+id/btnEq" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" android:backgroundTint="#4CC2FF" android:text="@string/calc_eq" android:textColor="#000000" android:textSize="24sp" android:layout_height="match_parent" android:layout_margin="1dp"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
